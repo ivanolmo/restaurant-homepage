@@ -417,7 +417,7 @@ footer {
 .hours__header,
 .contact__header,
 .subscribe__header {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.7857rem + 0.9524vw, 1.5rem);
   margin-bottom: 2.5rem;
 }
 
@@ -426,7 +426,7 @@ footer {
 }
 
 .footer__logo {
-  width: 25%;
+  /* width: 25%; */
   padding-left: 0;
 }
 
@@ -439,16 +439,20 @@ footer {
 }
 
 .footer__hours {
-  width: 18%;
+  /* width: 18%; */
 }
 
 .footer__contact {
-  width: 27%;
+  /* width: 27%; */
 }
 
 .footer__subscribe {
-  width: 30%;
+  /* width: 30%; */
   padding-right: 0;
+}
+
+.footer__item {
+  width: 25%;
 }
 
 .subscribe__form {
@@ -520,6 +524,15 @@ footer {
   .customer__img {
     max-width: 25%;
   }
+
+  .footer__container {
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+
+  .footer__item {
+    width: 50%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -537,5 +550,25 @@ footer {
 
   .customer__img {
     max-width: 35%;
+  }
+
+  .hours__header,
+  .contact__header,
+  .subscribe__header {
+    margin-bottom: 1rem;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer__container > * {
+    padding: 0;
+  }
+
+  .footer__item {
+    width: 80%;
   }
 }
