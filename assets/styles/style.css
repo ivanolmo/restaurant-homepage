@@ -277,7 +277,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 800px;
+  gap: 1rem;
   width: 80%;
 }
 
@@ -287,7 +287,7 @@ header {
 }
 
 .booking__header {
-  font-size: 3.75rem;
+  font-size: clamp(1.5rem, 0.5357rem + 4.2857vw, 3.75rem);
 }
 
 .fa-phone {
@@ -297,7 +297,7 @@ header {
 }
 
 .booking__number {
-  font-size: 1.75rem;
+  font-size: clamp(1.25rem, 1.0357rem + 0.9524vw, 1.75rem);
 }
 
 .booking__schedule {
@@ -313,7 +313,7 @@ header {
 
 .schedule__hours {
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
+  font-size: clamp(1.125rem, 0.9643rem + 0.7143vw, 1.5rem);
 }
 
 .booking__video {
@@ -503,6 +503,16 @@ footer {
   .picker__option {
     padding: 0.5rem 0.7rem;
   }
+
+  .booking__schedule {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .video__placeholder {
+    max-width: 70%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -512,5 +522,9 @@ footer {
 
   .picker__option {
     padding: 0.5rem;
+  }
+
+  .booking__video i {
+    font-size: 2rem;
   }
 }
