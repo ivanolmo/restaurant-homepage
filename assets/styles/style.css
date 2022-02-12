@@ -136,7 +136,7 @@ header {
 
 .fa-social-icon {
   font-size: 1.125rem;
-  padding-right: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 /* 
@@ -491,4 +491,16 @@ footer {
 
 .footer__social i {
   margin-left: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .overlay__social {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .overlay__social {
+    display: none;
+  }
 }
