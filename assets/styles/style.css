@@ -337,7 +337,6 @@ header {
 
 .hero__div--testimonials {
   background-image: url('/assets/images/testimonials-hero.jpg');
-  background-position: center -180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,7 +348,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 560px;
+  gap: 2rem;
   width: 80%;
 }
 
@@ -358,7 +357,7 @@ header {
 }
 
 .testimonials__header {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 0.8571rem + 2.8571vw, 3rem);
 }
 
 .testimonials__customer {
@@ -366,8 +365,8 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   text-align: center;
-  height: 60%;
 }
 
 .customer__img {
@@ -390,7 +389,7 @@ header {
 }
 
 .customer__review {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 0.8929rem + 0.4762vw, 1.25rem);
   font-style: italic;
   line-height: 1.5;
 }
@@ -513,6 +512,14 @@ footer {
   .video__placeholder {
     max-width: 70%;
   }
+
+  .testimonials__item {
+    gap: 1rem;
+  }
+
+  .customer__img {
+    max-width: 25%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -526,5 +533,9 @@ footer {
 
   .booking__video i {
     font-size: 2rem;
+  }
+
+  .customer__img {
+    max-width: 35%;
   }
 }
