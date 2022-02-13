@@ -425,30 +425,12 @@ footer {
   margin-bottom: 1.25rem;
 }
 
-.footer__logo {
-  /* width: 25%; */
-  padding-left: 0;
-}
-
 .logo__img {
   max-width: 50%;
 }
 
 .logo__blurb {
   line-height: 1.5;
-}
-
-.footer__hours {
-  /* width: 18%; */
-}
-
-.footer__contact {
-  /* width: 27%; */
-}
-
-.footer__subscribe {
-  /* width: 30%; */
-  padding-right: 0;
 }
 
 .footer__item {
