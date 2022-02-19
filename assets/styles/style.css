@@ -414,7 +414,6 @@ footer {
 
 .footer__container {
   display: flex;
-  padding-bottom: 5rem;
 }
 
 .footer__container > * {
@@ -466,15 +465,12 @@ footer {
 }
 
 .footer__end {
-  position: absolute;
-  bottom: 4%;
-  left: 8%;
-  right: 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.75rem;
-  padding-top: 1%;
+  margin-top: 5rem;
+  padding: 1rem 0;
   border-top: 1px solid #dce4e6;
 }
 
@@ -545,6 +541,10 @@ footer {
 
   .footer__item {
     width: 50%;
+  }
+
+  .footer__end {
+    margin-top: 1rem;
   }
 
   .footer__social {
