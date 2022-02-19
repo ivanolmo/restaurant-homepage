@@ -1,7 +1,8 @@
-let x = document.getElementById('menu__icon');
-let y = document.getElementById('nav__list');
+// toggle nav on smaller screens
+let icon = document.getElementById('menu__icon');
+let nav = document.getElementById('nav__list');
 
-x.addEventListener('click', (e) => {
+icon.addEventListener('click', (e) => {
   e.preventDefault();
-  y.classList.toggle('active--nav');
+  nav.classList.toggle('active--nav');
 });
