@@ -482,7 +482,7 @@ footer {
   margin-left: 1.5rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
   .nav__list {
     display: none;
     margin: 0 auto;
@@ -547,7 +547,7 @@ footer {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 26.25rem) {
   .overlay__social {
     display: none;
   }
