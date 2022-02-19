@@ -78,9 +78,8 @@ header {
 
 .primary__nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 1rem 0;
-  /* gap: 2.2rem; */
 }
 
 .nav__list li {
@@ -88,16 +87,9 @@ header {
   padding-inline: 1rem;
 }
 
-.nav__link {
-  /* text-align: center; */
-}
-
-.nav__link:hover {
-  /* background-color: green; */
-}
-
 .menu__icon {
   display: none;
+  cursor: pointer;
 }
 
 /* Hero overlay styling */
@@ -491,8 +483,27 @@ footer {
 }
 
 @media (max-width: 800px) {
-  .nav__menu {
-    gap: 2rem;
+  .nav__list {
+    display: none;
+    margin: 0 auto;
+  }
+
+  .nav__list li {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .nav__list li:not(:first-child) {
+    padding: 0.5rem 0;
+  }
+
+  .menu__icon {
+    display: block;
+  }
+
+  .active--nav {
+    display: block;
   }
 
   .overlay__social {
@@ -533,11 +544,6 @@ footer {
 
   .footer__item {
     width: 50%;
-  }
-}
-
-@media (max-width: 780px) {
-  .primary__nav {
   }
 }
 
